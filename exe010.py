@@ -2,5 +2,5 @@
 #Considere US$1.00 =  R$3.27
 
 din = float(input('Qaunto dinheiro você tem na carteira: '))
-dol = din * 3.27
+dol = din / 5.59
 print('Tenho {:.2f} reais, que equivalem a {:.2f} dólares!'.format(din, dol))
