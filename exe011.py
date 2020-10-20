@@ -3,6 +3,6 @@
 
 altura = float(input('Qual a altura da parede? '))
 largura = float(input('Qual a largura da parede? '))
-area = (altura**2) * (largura**2)
+area = altura * largura
 tinta = area / 2
-print('A área total da sala é {:.2f} e será necessário {:.1f} litros de tinta para pintá-la.'.format(area, tinta))
+print('A área total da sala é {:.2f}m² e será necessário {:.1f} litros de tinta para pintá-la.'.format(area, tinta))
