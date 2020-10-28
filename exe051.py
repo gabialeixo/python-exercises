@@ -3,9 +3,8 @@
 
 termo = int(input('Digite o primeiro termo: '))
 razao = int(input('Digite a razão: '))
-progressao = termo
-print(termo)
+progressao = termo + (10 - 1) * razao
 
-for c in range(0,9):
-    progressao += razao
-    print(progressao)
+for c in range(termo, progressao + razao, razao):
+    print('{}'.format(c), end=' -> ')
+print('FIM.')
