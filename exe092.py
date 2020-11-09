@@ -10,15 +10,15 @@ dados['nome'] = str(input('Digite o seu nome: '))
 nascimento = int(input('Digite o seu ano de nascimento: '))
 dados['idade'] = ano - nascimento
 dados['ctps'] = int(input('Número da CTPS (Digite 0 se não tiver): '))
+if dados['ctps'] == 0:
+    print(f'Nome: {dados["nome"]}.')
+    print(f'Idade: {dados["idade"]}.')
+    print('Não possui CTPS.')
 if dados['ctps'] != 0:
     dados['contratacao'] = int(input('Ano de contratação: '))
     aposentadoria = dados['contratacao'] - nascimento
     idade_aposentadoria = aposentadoria + 35
     dados['salario'] = float(input('Salário: R$'))
-if dados['ctps'] == 0:
-    print(f'Nome: {dados["nome"]}.')
-    print(f'Idade: {dados["idade"]}.')
-    print('Não possui CTPS.')
 
 print('{:=^40}'.format(' DADOS CADASTRADOS '))
 print(f'Nome: {dados["nome"]}.')
