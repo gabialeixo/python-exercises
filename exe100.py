@@ -9,9 +9,9 @@ from time import sleep
 def sorteio(lista):
     print('Sorteando 5 valores da lista: ', end='')
     for c in range(0, 5):
-        n = randint(1, 10)
-        lista.append(n)
-        print(f'{n} ', end='')
+        c = randint(1, 10)
+        lista.append(c)
+        print(f'{c} ', end='')
         sleep(0.5)
     print('PRONTO!')
     sleep(1)
